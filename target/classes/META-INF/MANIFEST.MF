@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: travel
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: DUCANH
+Implementation-Vendor-Id: org.travel
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/travel
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,20 @@
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: Font Awesome\ 5 Free;
+}
+.fa-lg {
+    font-size: 1.33333em;
+    line-height: .75em;
+    vertical-align: -.0667em;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

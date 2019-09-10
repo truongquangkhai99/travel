@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define web -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/web/master.jsp">  
+        <put-attribute name="title" value="Travel" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/web/header.jsp" />  
+        <put-attribute name="slidebar" value="/WEB-INF/basefragments/web/slidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/web/footer.jsp" />  
+    </definition>  
+    <!--login layout  -->
+     <definition name="base.login" 
+        template="/WEB-INF/layouts/web/loginlayout.jsp">  
+        <put-attribute name="body" value="" />  
+    </definition>  
+ 
+    <!-- Home Page  -->
+    <definition name="homePage" extends="base.definition">  
+        <put-attribute name="title" value="Home Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/web/home.jsp" />  
+    </definition>  
+       
+    <!-- ContactUs Page -->
+     <definition name="detail" extends="base.definition">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/web/detail.jsp" />  
+    </definition>
+    
+    <!--login  -->  
+    <!-- ContactUs Page -->
+     <definition name="loginPage" extends="base.login">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/common/login.jsp" />  
+    </definition>
+    <!-- ContactUs Page -->
+     <definition name="403" extends="base.definition">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/common/403.jsp" />  
+    </definition>
+    
+    <!-- admin  -->
+    <!-- Base Define admin -->
+    <definition name="base.admin.definition" 
+        template="/WEB-INF/layouts/admin/master.jsp">  
+        <put-attribute name="title" value="managerment" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/admin/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/basefragments/admin/menu.jsp" />  
+        <put-attribute name="searhBody" value="" />
+        <put-attribute name="listBody" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/admin/footer.jsp" />  
+    </definition>
+    
+    <!-- manager user  -->  
+     
+    <definition name="userPage" extends="base.admin.definition">  
+        <put-attribute name="title" value="User" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/admin/user/home.jsp" />    
+    </definition>
+    <definition name="listUser" template="/WEB-INF/bodyfragments/admin/user/list.jsp">   
+    </definition>
+    <definition name="saveUser" template="/WEB-INF/bodyfragments/admin/user/save.jsp">   
+    </definition>
+    <definition name="roleUser" template="/WEB-INF/bodyfragments/admin/user/role.jsp">   
+    </definition>
+    <!--notifycation-->
+    <definition name="notifycation" template="/WEB-INF/common/notifycation.jsp">   
+    </definition>
+    
+    <!-- manager tour  -->
+    <definition name="tourPage" extends="base.admin.definition">  
+        <put-attribute name="title" value="Tour" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/admin/tour/home.jsp" />    
+    </definition>
+    <definition name="listTour" template="/WEB-INF/bodyfragments/admin/tour/list.jsp">   
+    </definition>
+    <definition name="saveTour" template="/WEB-INF/bodyfragments/admin/tour/save.jsp">   
+    </definition>
+    
+</tiles-definitions> 
