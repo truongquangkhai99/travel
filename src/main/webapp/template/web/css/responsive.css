@@ -1,0 +1,505 @@
+@media (min-width: 1300px) {
+    .container {
+        width: 1300px !important;
+    }
+}
+
+@media only screen and (max-width:1300px) {}
+
+@media only screen and (max-width:1024px) {
+    #tourgiochot div.crop img {
+        margin: 0px 0;
+        height: 309px;
+    }
+    #form-search .bg-dltn .triangle-up {
+        left: 22% !important;
+    }
+    #form-search .bg-dlnn .triangle-up {
+        left: 40% !important;
+    }
+    #form-search .bg-dltt .triangle-up {
+        left: 77% !important;
+    }
+    #tourgiochot .info-tourgiochot {
+        padding: 20px;
+    }
+    #tourgiochot .frame-tourgiochot.trai.col-lg-6 {
+        padding-right: 15px !important;
+    }
+    #tourgiochot .tourgiochot-img.phai.col-lg-6 {
+        padding-right: 15px !important;
+    }
+    #tourgiochot .frame-tourgiochot a.tourgiochot-title h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    #tourgiochot .frame-tourgiochot .info-tourgiochot .mg-b-gia {
+        margin-bottom: 10px;
+    }
+    #diemden img.qg-img {
+        height: 110px;
+    }
+    #visao .bg-visao {
+        height: auto;
+    }
+    #visao .bg-visao .pad .mg-bot30.mg-bot30-s {
+        margin-bottom: 0px !important;
+    }
+    #khachhang .o-phai {
+        padding-left: 0px;
+    }
+    .banner-worldcup {
+        background: #fff;
+        height: auto;
+    }
+    .padding-worldcup {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #vtv_overlay,
+    #vtv_popup {
+        display: none;
+    }
+    .tourtype-name{
+    	font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #livechat-compact-container {
+        display: none;
+    }
+    .home-cattieudebinhluan {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:769px) {}
+
+@media only screen and (max-width:768px) {
+    #tourgiochot div.crop img {
+        margin: 0px 0;
+        height: 308px;
+        width: 100%;
+    }
+	#tour-type {
+    height: 200px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 12px;
+    padding-top: 12px;
+	}
+	.text2.text-dltt{
+		font-size: 20px;
+	}
+	.text2.text-dltc{
+		font-size: 20px;
+	}
+	.text2.text-dlnn{
+		font-size: 20px;
+	}
+	p.text2.text-dltn{
+		font-size: 20px;
+	}
+    .slideContainer {
+        display: none;
+    }
+    .dotsCircles {
+        display: none;
+    }
+    #form-search .frame-search {
+        margin-top: 0px;
+        width: 100%;
+    }
+    #form-search {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #form-search .o-dl {
+        width: 23.2%;
+        height: 55px;
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 8px;
+    }
+    #form-search .frame-search .mg-b {
+        margin-bottom: 10px;
+    }
+    #form-search .frame-search img {
+        height: 35px;
+    }
+    #form-search .bg-dltn .triangle-up {
+        left: 15% !important;
+    }
+    #form-search .bg-dlnn .triangle-up {
+        left: 37% !important;
+    }
+    #form-search .bg-dltt .triangle-up {
+        left: 82% !important;
+    }
+    #form-search .frame-dltt .txt-sobooking {
+        width: 100%;
+    }
+    #form-search .frame-dltt .btn-trabooking {
+        width: 100%;
+    }
+    #form-search .frame-dltt {
+        margin: initial !important;
+        display: flex !important;
+        width: 100%;
+    }
+    #form-search .bg-dltn .triangle-up {
+        left: 17% !important;
+    }
+    #form-search .bg-dlnn .triangle-up {
+        left: 37% !important;
+    }
+    #form-search .bg-dltt .triangle-up {
+        left: 85% !important;
+    }
+    #tour-type .frame-tourtype .tourtype-txt {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    #tourgiochot .frame-tourgiochot.trai.col-lg-6 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    #tourgiochot .tourgiochot-img.trai.col-lg-6 {
+        padding-right: 15px !important;
+    }
+    #tourgiochot .info-tourgiochot {
+        height: auto;
+    }
+    #tourgiochot .frame-tourgiochot.phai.col-lg-6 {
+        padding-right: 15px !important;
+    }
+    #tourgiochot .tourgiochot-img.phai.col-lg-6 {
+        padding-left: 15px !important;
+    }
+    #tourgiasoc img.tgs-img {
+        height: 260px;
+    }
+    #diemden img.dd-img {
+        height: 390px;
+    }
+    #diemden .quocgia .col-sm-4 {
+        width: 50% !important;
+    }
+    #diemden img.qg-img {
+        height: 230px;
+    }
+    #visao .bg-visao .pad .mg-bot30.mg-bot30-s {
+        margin-bottom: 0px !important;
+    }
+    #visao .bg-visao {
+        padding: 50px 10px 50px 10px;
+    }
+    #visao .bg-visao .oso {
+        padding: 6px 10px;
+        width: 28px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    #khachhang .o-phai .carousel-indicators {
+        padding-left: 30px !important;
+    }
+    .nav-top li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width:481px) {
+    .clearfix {
+        display: none;
+    }
+    #header img.img-logo {
+        height: 51px;
+    }
+    #header #top {
+        background: #fff;
+        height: 54px;
+        color: #333;
+        border-bottom: 1px dotted #ccc;
+    }
+    #header .nav-top {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: #333;
+        width: auto;
+        z-index: 9;
+    }
+    #header .nav-top li a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #header .nav-top li {
+        position: initial;
+    }
+    #header .nav-top .sub-menu {
+        position: initial;
+    }
+    #header .nav-top>li {
+        float: initial;
+    }
+    #header .nav-top-iconmenu {
+        float: right;
+    }
+    #header .nav-top>li {
+        margin-right: 0px;
+        height: 40px;
+        line-height: 39px;
+        border-top: 1px solid #585858;
+        background-color: #333;
+    }
+    #header .area-info .obj {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header .area-info.support-phone {
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    #header .bot-mg-b {
+        margin-bottom: 20px;
+    }
+    #tour-type {
+        height: auto !important;
+    }
+    #visao .bg-visao .pad .mg-bot30.mg-bot30-s {
+        margin-bottom: 30px !important;
+    }
+    #dulichtuchon img.tcp-img {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .clearfix {
+        display: none;
+    }
+    #header #top {
+        background: #fff;
+        height: 54px;
+        color: #333;
+        border-bottom: 1px dotted #ccc;
+    }
+    #header .nav-top {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: #333;
+        width: auto;
+        z-index: 9;
+    }
+    #header .nav-top li a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #header .nav-top li {
+        position: initial;
+    }
+    #header .nav-top .sub-menu {
+        position: initial;
+    }
+    #header .nav-top>li {
+        float: initial;
+    }
+    #header .nav-top-iconmenu {
+        float: right;
+    }
+    #header .nav-top>li {
+        margin-right: 0px;
+        height: 40px;
+        line-height: 39px;
+        border-top: 1px solid #585858;
+        background-color: #333;
+    }
+    #header .area-info .obj {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header .area-info.support-phone {
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    #header .bot-mg-b {
+        margin-bottom: 20px;
+    }
+    #form-search .frame-search {
+        margin-top: 0px;
+        width: 100%;
+    }
+    #form-search {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #form-search .o-dl {
+        width: 23%;
+        height: 55px;
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 8px;
+    }
+    #form-search .frame-search .mg-b {
+        margin-bottom: 10px;
+    }
+    #form-search .frame-search img {
+        height: 35px;
+    }
+    #form-search .bg-dltn .triangle-up {
+        left: 15% !important;
+    }
+    #form-search .bg-dlnn .triangle-up {
+        left: 37% !important;
+    }
+    #form-search .bg-dltt .triangle-up {
+        left: 82% !important;
+    }
+    #form-search .frame-dltt .txt-sobooking {
+        width: 100%;
+    }
+    #form-search .frame-dltt .btn-trabooking {
+        width: 100%;
+    }
+    #form-search .frame-dltt {
+        margin: initial !important;
+        display: flex !important;
+        width: 100%;
+    }
+    #form-search .frame-dltt .frame-dltt-left {
+        float: initial !important;
+    }
+    #tourgiochot div.crop {
+        height: initial !important;
+    }
+    #tourgiochot .frame-tourgiochot .info-tourgiochot .mg-b {
+        margin-bottom: 10px;
+    }
+    #tourgiochot .info-tourgiochot {
+        padding: 15px;
+    }
+    #diemden .quocgia .col-xs-12 {
+        width: 100% !important;
+    }
+    #dulichtuchon .frame-tuchon-c .pos-info {
+        bottom: 50px;
+        left: 20px;
+    }
+    #dulichtuchon .frame-tuchon-c .tuchon-ten {
+        font-size: 14px;
+    }
+    #dulichtuchon .frame-tuchon-c .tuchon-noi {
+        font-size: 14px;
+        max-width: 250px;
+    }
+    #dulichtuchon .frame-tuchon-c .tuchon-ten span.bb {
+        font-size: 18px;
+    }
+    #visao .bg-visao .pad .mg-bot30.mg-bot30-s {
+        margin-bottom: 30px !important;
+    }
+    #khachhang .o-phai .carousel-indicators {
+        padding-left: 15px !important;
+    }
+    #diemden img.dd-img {
+        height: 225px;
+    }
+    #diemden img.qg-img {
+        height: 225px;
+    }
+    /* #tourgiasoc img.tgs-img {
+        height: 225px;
+    } */
+    #dulichtuchon img.tc-img {
+        height: 225px;
+    }
+    #tourgiochot div.crop img {
+        margin: initial !important;
+        height: 225px;
+        width: 100%;
+    }
+    #form-search .text2 {
+        font-size: 8px;
+    }
+    #form-search .text1 {
+        border-bottom: 1px dashed #b7afac;
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+        font-size: 11px;
+    }
+    #tour-type {
+        height: auto;
+    }
+    #tour-type .item-tour-type {
+        margin-bottom: 10px;
+    }
+    #visao .bg-visao .pad .mg-bot30.mg-bot30-s:last-child {
+        margin-bottom: 0px !important;
+    }
+    .home-cattentourgiochot {
+        height: 25px;
+    }
+    #tourgiochot .frame-tourgiochot .tourgiochot-title {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .clearfix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:375px) {
+	.tourtype-name{
+		font-size: 10px;
+	}
+    .clearfix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .clearfix {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .mg-bot10 {
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .clearfix {
+        display: none;
+    }
+    #diemden img.dd-img {
+        height: 195px;
+    }
+    #diemden img.qg-img {
+        height: 195px;
+    }
+    #tourgiasoc img.tgs-img {
+        height: 195px;
+    }
+    #dulichtuchon img.tc-img {
+        height: 195px;
+    }
+    #tourgiochot div.crop img {
+        height: 195px;
+    }
+    #form-search .text2 {
+        font-size: 7px;
+    }
+    #form-search .text1 {
+        font-size: 10px;
+    }
+    .phone-support .dropdown-menu {
+        right: -15px !important;
+    }
+}

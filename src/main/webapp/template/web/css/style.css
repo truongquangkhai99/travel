@@ -1,0 +1,984 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.clear {
+    clear: both;
+}
+
+#header #top {
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+}
+
+#header #bot {
+    height: 70px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.row {
+    display: block;
+}
+
+.area-info {
+    margin-top: 20px;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.f-left {
+    float: left;
+}
+.giochot.bg-mauchudao{
+    float: right;
+}
+.mg-b-gia{
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.area-info .obj {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #cfcfcf;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.area-info {
+    margin-top: 20px;
+}
+
+.area-info.phone-support {
+    padding-left: 20px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+.hotline {
+    color: #fc6600 !important;
+}
+
+.f-right {
+    float: right;
+}
+
+
+/* srtat dropdown */
+
+.clearfix {
+    content: "";
+    display: table;
+}
+
+menu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+menu>ul {
+    padding: 0px;
+    color: #333;
+    float: right;
+}
+
+menu>ul>li {
+    float: left;
+    list-style: none;
+    position: relative;
+    margin-right: 40px;
+}
+
+.main-menu>li>a {
+    display: block;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+}
+
+.main-menu>li:hover>a {
+    background-color: #333;
+    color: orangered;
+    text-decoration: none;
+}
+
+.search {
+    padding: 18px 0 18px 0;
+    margin-right: 0;
+}
+
+.dropdown {
+    background-color: #333;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.25s ease 0s;
+}
+
+.dropdown>ul {
+    width: 180px;
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.dropdown>ul:first-of-type {
+    margin-left: 10px;
+    padding-left: 0;
+    border-left: 0;
+}
+
+.dropdown>ul:last-of-type {
+    margin-right: 10px;
+}
+
+.dropdown>ul>li>a {
+    color: #fff;
+}
+
+.dropdown a:hover {
+    color: tomato;
+    text-decoration: none;
+}
+
+.main-menu>li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+/*  end drop down */
+
+
+/* start form search */
+
+#form-search {
+    background: #f1f1f1;
+    height: 100px;
+}
+
+#form-search .frame-search {
+    margin: 0px auto;
+    display: table;
+    margin-top: -100px;
+}
+
+#form-search .o-dl {
+    background: #fff;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    display: inline-table;
+    text-align: center;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    float: left;
+    margin-right: 30px;
+}
+
+#form-search .o-dl:last-child {
+    margin-right: 0px;
+}
+
+#form-search .frame-search .mg-b {
+    margin-bottom: 20px;
+}
+
+#form-search .mg-b {
+    margin-bottom: 8px;
+}
+
+#form-search .text1 {
+    text-transform: uppercase;
+    border-bottom: 1px dashed #4e4b4a;
+    padding-bottom: 10px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#form-search .text2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#form-search .text-dltn {
+    color: #015196;
+}
+
+#form-search .text-dlnn {
+    color: #f0433a;
+}
+
+#form-search .text-dltc {
+    color: #f2a30f;
+}
+
+#form-search .text-dltt {
+    color: #008c72;
+}
+
+#form-search .bg-dltn {
+    background: #fff;
+    border-bottom: 3px solid #015196;
+}
+
+#form-search .form-info-search {
+    margin-top: 15px;
+    color: #fff;
+}
+
+#form-search .bg-dltn .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -10px;
+    left: 29%;
+}
+
+#form-search .pad-tb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#form-search .bg-dltn label {
+    color: #015196;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#form-search .mg-b {
+    margin-bottom: 8px;
+}
+
+#form-search .form-control {
+    border-radius: 0px !important;
+    border: none !important;
+    border-bottom: 1px dashed #000 !important;
+    box-shadow: initial !important;
+    padding: 0px !important;
+}
+
+
+/* start slideshow */
+
+.mySlides {
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slideContainer {
+    position: relative;
+    margin: auto;
+}
+
+.pic {
+    position: relative;
+    width: 100%;
+   /*  height: 50%; */
+    border-radius: 5px;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -1em;
+    padding: 16px;
+    color: #D8D8D8;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* .active,
+.dot:hover {
+    background-color: #717171;
+}  */
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text,
+    .numbertext {
+        font-size: 11px;
+    }
+}
+
+
+/* end slideshow */
+
+
+/* show slide-type cÃ¡ch 1*/
+
+#tour-type {
+    height: 120px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mg-bot15 {
+    margin-bottom: 15px;
+}
+
+#tour-type .item-tour-type {
+    text-align: center;
+}
+
+#tour-type .img-responsive {
+    margin: 0 auto;
+}
+
+#tour-type .item-tour-type .tourtype-name {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#tour-type .carousel.right-type {
+    background-image: none!important;
+    background-repeat: no-repeat!important;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    width: 50px;
+}
+
+.carousel.left-type,
+.carousel.right-type {
+    margin-left: 15px;
+    background-image: none;
+}
+
+#tour-type img.chevron-right,
+#tour-type img.chevron-left {
+    opacity: 0.3;
+}
+
+
+/* content */
+
+
+/* tour giá»� chÃ³t */
+
+.frame-tour {
+    margin-top: 15px;
+}
+
+h2.home-title {
+    margin: 20px 0px 30px 0px;
+}
+
+h2.home-title a {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mg-bot20 {
+    margin-bottom: 20px;
+}
+
+#tourgiochot .tourgiochot-img.trai.col-lg-6 {
+    padding-right: 0px !important;
+}
+
+#tourgiochot div.crop {
+    height: 226px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tourgiochot div.crop img {
+    margin: 0px 0;
+}
+
+#tourgiochot .frame-tourgiochot.trai.col-lg-6 {
+    padding-left: 0px !important;
+    text-align: left;
+}
+
+#tourgiochot .frame-tourgiochot .info-tourgiochot {
+    color: #000;
+}
+
+#tourgiochot .info-tourgiochot {
+    background: #f7f7f7;
+    padding: 25px;
+    color: #333;
+    height: 226px;
+}
+
+#tourgiochot .frame-tourgiochot .tourgiochot-title {
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.home-cattentourgiochot {
+    height: 25px;
+    width: 100%;
+}
+
+#tourgiochot .frame-tourgiochot .tourgiochot-title a {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#tourgiochot .frame-tourgiochot .tourgiochot-title a:hover {
+    text-decoration: none;
+}
+
+.mg-bot20 {
+    margin-bottom: 20px;
+}
+
+.mg-bot10 {
+    margin-bottom: 10px;
+}
+
+#tourgiochot .frame-tourgiochot .info-tourgiochot .mg-b-gia {
+    margin-bottom: 20px;
+}
+
+#tourgiochot .frame-tourgiochot .info-tourgiochot .giacu {
+    text-decoration: line-through;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.f-left {
+    float: left;
+}
+
+#tourgiochot .frame-tourgiochot .info-tourgiochot .giamoi {
+    font-size: 19px;
+    font-weight: bold;
+    color: #e82c0c;
+}
+
+#tourgiochot .frame-tourgiochot .info-tourgiochot .giochot {
+    padding: 11px;
+    color: #fff;
+    width: 200px;
+}
+
+.bg-mauchudao {
+    background: #fc6600 !important;
+}
+
+#tourgiochot .frame-tourgiochot.phai.col-lg-6 {
+    padding-right: 0px !important;
+    text-align: left;
+}
+
+#tourgiochot .tourgiochot-img.phai.col-lg-6 {
+    padding-left: 0px !important;
+}
+
+.btn-default {
+    background: #fc6600 !important;
+    color: #fff!important;
+    border-color: #fc6600 !important;
+}
+
+
+/* tour giÃ¡ sá»‘c */
+
+.frame-tour {
+    margin-top: 15px;
+}
+
+h2.home-title {
+    margin: 20px 0px 30px 0px;
+}
+
+h2.home-title a {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tourgiasoc .frame-tourgiasoc {
+    background: #f7f7f7;
+    height: auto;
+}
+
+#tourgiasoc .frame-tourgiasoc .div-title {
+    border-bottom: 1px dashed #ccc;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.home-cattentourgiasoc {
+   /*  height: 16px; */
+    width: 100%;
+}
+
+.mauchudao {
+    color: #fc6600 !important;
+}
+
+#tourgiasoc .frame-tourgiasoc .div-info {
+    padding: 10px;
+    color: #000;
+}
+
+#tourgiasoc .frame-tourgiasoc .div-info .giacu {
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#tourgiasoc .frame-tourgiasoc .div-info .giamoi {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e82c0c;
+}
+
+
+/* Ä‘iá»ƒm Ä‘áº¿n yÃªu thÃ­ch */
+
+#diemden img.dd-img {
+    width: 100%;
+    height: 333px;
+}
+
+#diemden .frame-diemden {
+    position: absolute;
+    bottom: 0px;
+    background: #ccc;
+    padding: 50px 10px 20px 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .01), #000);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+#diemden .frame-diemden .diemden-ten {
+    margin: 0px auto;
+    display: table;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 10px;
+    width: 130px;
+}
+
+#diemden .frame-diemden .diemden-like {
+    font-size: 12px;
+}
+
+#diemden .frame-diemden .k {
+    font-size: 10px;
+}
+
+#diemden .quocgia .col-lg-2,
+#diemden .quocgia .col-lg-4 {
+    width: 20% !important;
+}
+
+#diemden img.qg-img {
+    width: 100%;
+    height: 154px;
+}
+
+#diemden .frame-quocgia {
+    position: absolute;
+    bottom: 0px;
+    background: #ccc;
+    padding: 30px 10px 10px 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .01), #000);
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+#diemden .frame-quocgia .quocgia-ten {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#diemden .frame-quocgia .quocgia-khampha {
+    font-size: 13px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+
+/* strat vÃ¬ sao chá»�n */
+
+#visao .bg-visao {
+    padding: 50px 0px 50px 0px;
+}
+
+#visao .bg-visao {
+    background-image: url(../image/visao.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 260px;
+}
+
+.mg-bot30 {
+    margin-bottom: 30px;
+}
+
+#visao .bg-visao .oso {
+    padding: 10px 13px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 35px;
+    font-size: 15px;
+    margin-right: 15px;
+    background: #fff !important;
+}
+
+#visao .bg-visao .form-visao .txt1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px dashed #ff9c00;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ff9c00 !important;
+}
+
+#visao .bg-visao .form-visao .txt2 {
+    margin-bottom: 5px;
+    font-size: 12.5px;
+}
+
+#visao .bg-visao .form-visao .txt3 {
+    font-size: 12.5px;
+}
+
+
+/* strat Ã½ kiáº¿n khÃ¡ch hÃ ng */
+
+#khachhang {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#khachhang .o-left {
+    border-right: 1px solid #e1e1e1;
+    display: table;
+    height: 150px;
+    overflow: hidden;
+}
+
+#khachhang .o-left .txt-mid {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#khachhang .o-left .txt1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#khachhang .o-phai {
+    padding-left: 40px;
+}
+
+#khachhang .o-phai .carousel-indicators {
+    bottom: -20px !important;
+    padding-left: 35px !important;
+    left: 26% !important;
+    text-align: left !important;
+}
+
+#khachhang .o-phai .carousel-indicators .active {
+    background-color: #ff6600 !important;
+    width: 13px !important;
+    height: 13px !important;
+}
+
+#khachhang .o-phai .carousel-indicators li {
+    border: 1px solid #fc6600 !important;
+}
+
+#khachhang .o-phai .bor {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#khachhang .o-phai .bor .txt1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.home-cattieudebinhluan {
+    height: 22px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#khachhang .o-phai .bor .mg-r {
+    margin-right: 5px;
+}
+
+
+/* strat footer */
+
+#footer {
+    background: #f3f3f3;
+    height: auto;
+    padding-top: 40px;
+    color: #000;
+    font-weight: 500;
+}
+
+#footer .item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer .mg-bot8 {
+    margin-bottom: 8px;
+}
+
+#footer .address {
+   line-height: 25px;;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#footer .bor {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+#footer ul.list-chinhsach li a {
+    margin: 10px 0 10px 0 !important;
+    display: block;
+    list-style: none;
+    background: url(../image/footer/circle.png) no-repeat left center;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#footer ul.list-chinhsach li a:hover {
+    color: #fc6600;
+}
+
+#footer .item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#footer .mg-left {
+    margin-left: 5px;
+}
+
+#footer .mg-left {
+    margin-left: 5px;
+}
+
+#footer .newsletter .form-control,
+#footer .search-info .form-control {
+    border-radius: 0px !important;
+    height: 50px;
+}
+
+#footer .btn-f {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#footer .btn-f .bg-btn {
+    background: #595959;
+    padding: 10px;
+    height: 50px;
+}
+
+#footer ul.list-nuoc li a {
+    margin: 8px 0 8px 0!important;
+    display: block;
+    text-decoration: none;
+}
+
+#footer ul.list-nuoc li a:hover {
+    color: #fc6600;
+}
+
+
+/* fooer chÃ¢n liÃªn há»‡ */
+
+#home-info {
+    padding-top: 20px;
+}
+
+#home-info p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
