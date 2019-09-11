@@ -21,8 +21,7 @@
 				<div class="col-lg-6 input-form">
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
-							<label for="name " class="col-lg-4 labe-right ">Trạng
-								thái</label>
+							<label for="name " class="col-lg-4 labe-right ">Trạng thái</label>
 							<form:select path="status" class="form-control" name="status">
 								<form:option value="">Hãy chọn</form:option>
 								<form:option value="1">Hoạt động</form:option>
@@ -217,8 +216,8 @@
 				<div class="col-lg-12 input-form" >
 					<div class="container-fluid" style="padding-left: 0px;">
 						<label class="col-lg-2" for="notes">Chú ý</label>
-						<div class="row col-lg-9" >
-							<textarea   style="height: 500px"  id="note"  name="notes" ></textarea>
+						<div class="row col-lg-9 insertError" >
+							<textarea  style="height: 550px"  id="note"  name="notes" ></textarea>
 						</div>
 					</div>
 				</div>
@@ -226,31 +225,19 @@
 				<div  class="col-lg-12 input-form">
 					<div class="container-fluid" style="padding-left: 0px;">
 						<label class="col-lg-2" for="tourPrograms">Chương trình tour</label>
-						<div class="row col-lg-9" >
-							<textarea  style="height: 500px"   id="tourProgram"  name="tourPrograms" ></textarea>
+						<div class="row col-lg-9 insertError" >
+							<textarea  style="height: 550px"   id="tourProgram"  name="tourPrograms" ></textarea>
 						</div>
 					</div>
 				</div>
-				<!-- <br>
-				<div class="input-form">
-					<div class="container-fluid errorTxt">
-						<div class="row insertError">
-							<label for="tourProgram">Chương trình tour</label>
-							<textarea style="width: 820; height: 175;" id="tourProgram"  name="tourProgram" 
-								class="col-lg-6 form-control" ></textarea>
-						</div>
-					</div>
-				</div> -->
 			</form:form>
 		</div>
 		<div class="button-form">
 			<c:if test="${empty userFormSave.id}">
-				<button type="button" id="btnAddUser" class="btn btn-primary active">Thêm
-					mới</button>
+				<button type="button" id="btnTour" class="btn btn-primary active">Thêm mới</button>
 			</c:if>
 			<c:if test="${not empty userFormSave.id}">
-				<button type="button" id="btnAddUser" class="btn btn-primary active">Cập
-					nhật</button>
+				<button type="button" id="btnTour" class="btn btn-primary active">Cập nhật</button>
 			</c:if>
 			<button type="button" onclick="hide()" id="btnOut"
 				class="btn btn-primary active">Quay lại</button>
@@ -278,49 +265,34 @@
 			},
 			status : {
 				required : true,
-				maxlength : 5
+				maxlength : 1
 			},
-			username : {
+			title : {
 				required : true,
 				maxlength : 255
 			},
-			oganizationnalId : {
+			smallImg : {
 				required : true,
+				maxlength : 255
 			},
-			password : {
+			contentImg : {
 				required : true,
 				maxlength : 15
 			},
-			email : {
+			price : {
 				required : true,
-				maxlength : 255,
-				email : true
+				maxlength : 15
 
 			},
-			phoneNumber : {
-				required : true,
-				maxlength : 15,
-				number : true
-			},
-			name : {
-				required : true,
-				maxlength : 255
-
-			},
-			dateOfBirh : {
+			startDate : {
 				required : true,
 				date : true
+			},
+			numberOfSeats : {
+				required : true,
+				maxlength : 3
 
 			},
-			address : {
-				required : true,
-				maxlength : 255
-
-			},
-			idNumber : {
-				required : true,
-				maxlength : 15
-			}
 
 		},
 		errorPlacement : function(error, element) {
@@ -332,11 +304,13 @@
 		$('#save').hide();
 		searchUser();
 	}
-	$('#btnAddUser').click(function(e) {
-		var submit = $("#save-user").valid();
+	$('#btnTour').click(function(e) {
+		var submit = $("#saveTour").valid();
+		alert("thanh cong")
 		if (submit == true) {
 			var data = converFormToObject('save-user');
-			updateAjax(data, '${searchUrl}', 'POST',saveSucces);
+			alert("thanh cong")
+			//updateAjax(data, '${searchUrl}', 'POST',saveSucces);
 		}
 	});
 	$("#datepicker-5").datepicker({
