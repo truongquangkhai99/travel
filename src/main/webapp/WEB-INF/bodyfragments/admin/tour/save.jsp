@@ -99,15 +99,6 @@
 				<div class="col-lg-6 input-form">
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
-							<label for="tourProgram" class="col-lg-4 labe-right ">Chương trình tour</label>
-							<form:input path="tourProgram" type="text " name="tourProgram" maxlength="15"
-								class="col-lg-6 form-control" />
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 input-form">
-					<div class="container-fluid errorTxt">
-						<div class="row insertError">
 							<label for="timeOfDepature" class="col-lg-4 labe-right ">Thời gian tập chung</label>
 							<form:input path="timeOfDepature" type="text " name="timeOfDepature" maxlength="15"
 								class="col-lg-6 form-control" />
@@ -216,22 +207,40 @@
 				<div class="col-lg-6 input-form">
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
-							<label for="note" class="col-lg-4 labe-right ">Chú ý</label>
-							<form:input path="note" type="text " name="note" maxlength="15"
-								class="col-lg-6 form-control" />
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 input-form">
-					<div class="container-fluid errorTxt">
-						<div class="row insertError">
 							<label for="licensePlates" class="col-lg-4 labe-right ">Biển số xe</label>
 							<form:input path="licensePlates" type="text " name="licensePlates" maxlength="15"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
 				</div>
-
+				<div style="clear: both;"></div>
+				<div class="col-lg-12 input-form" >
+					<div class="container-fluid" style="padding-left: 0px;">
+						<label class="col-lg-2" for="notes">Chú ý</label>
+						<div class="row col-lg-9" >
+							<textarea   style="height: 500px"  id="note"  name="notes" ></textarea>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div  class="col-lg-12 input-form">
+					<div class="container-fluid" style="padding-left: 0px;">
+						<label class="col-lg-2" for="tourPrograms">Chương trình tour</label>
+						<div class="row col-lg-9" >
+							<textarea  style="height: 500px"   id="tourProgram"  name="tourPrograms" ></textarea>
+						</div>
+					</div>
+				</div>
+				<!-- <br>
+				<div class="input-form">
+					<div class="container-fluid errorTxt">
+						<div class="row insertError">
+							<label for="tourProgram">Chương trình tour</label>
+							<textarea style="width: 820; height: 175;" id="tourProgram"  name="tourProgram" 
+								class="col-lg-6 form-control" ></textarea>
+						</div>
+					</div>
+				</div> -->
 			</form:form>
 		</div>
 		<div class="button-form">
@@ -249,7 +258,17 @@
 	</div>
 </div>
 <script>
+
+	var note = '';
+	$(document).ready(function() {
+		editor = CKEDITOR.replace('note');
+	});
+	var tourProgram = '';
+	$(document).ready(function() {
+		editor = CKEDITOR.replace('tourProgram');
+	});
 	/* validate */
+	
 
 	$("#save-user").validate({
 		rules : {

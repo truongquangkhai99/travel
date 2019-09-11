@@ -31,6 +31,7 @@
 <link rel='stylesheet' type='text/css' media='screen'
 	href='<c:url value = "/template/web/css/ace.min.css"/>'>
 <script src='<c:url value = "/template/paging/jquery.twbsPagination.min.js"/>'></script>
+  <script src="<c:url value='/template/ckeditor/ckeditor.js' />"></script>
 <body>
 	<div id="notifycation"></div>
 	<tiles:insertAttribute name="header" />
