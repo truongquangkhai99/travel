@@ -5,7 +5,7 @@
 <div class="container-fluid">
 	<div class="row search-layout">
 		<div class="col-lg-12">
-			<form:form id="save-user" action="/admin/v1/user" method="POST"
+			<form:form id="saveTour" action="/admin/v2/tour" method="POST"
 				modelAttribute="tourFormSave">
 				<form:input path="id" type="hidden" name="id"
 					class="col-lg-6 form-control" />
@@ -82,7 +82,7 @@
 						<div class="row insertError">
 							<label for="numberOfSeats" class="col-lg-4 labe-right ">Số chỗ</label>
 							<form:input path="numberOfSeats" type="text " name="numberOfSeats"
-								maxlength="15" class="col-lg-6 form-control" />
+								maxlength="3" class="col-lg-6 form-control" />
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="departureLocation" class="col-lg-4 labe-right ">Địa điểm xuất phát</label>
-							<form:input path="departureLocation" type="text " name="departureLocation" maxlength="15"
+							<form:input path="departureLocation" type="text " name="departureLocation" maxlength="255"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -100,7 +100,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="timeOfDepature" class="col-lg-4 labe-right ">Thời gian tập chung</label>
-							<form:input path="timeOfDepature" type="text " name="timeOfDepature" maxlength="15"
+							<form:input path="timeOfDepature" type="text " name="timeOfDepature"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="timeOfEnd" class="col-lg-4 labe-right ">Thời gian kết thúc tour</label>
-							<form:input path="timeOfEnd" type="text " name="timeOfEnd" maxlength="15"
+							<form:input path="timeOfEnd" type="text " name="timeOfEnd" 
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -136,7 +136,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="hotelInformation" class="col-lg-4 labe-right ">Thông tin khách sạn</label>
-							<form:input path="hotelInformation" type="text " name="hotelInformation" maxlength="15"
+							<form:input path="hotelInformation" type="text " name="hotelInformation" maxlength="255"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -145,7 +145,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="userId" class="col-lg-4 labe-right ">Hướng dẫn viên</label>
-							<form:input path="userId" type="text " name="userId" maxlength="15"
+							<form:input path="userId" type="text " name="userId" maxlength="255"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -154,7 +154,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="dateOfGathering" class="col-lg-4 labe-right ">Ngày tập chung</label>
-							<form:input path="dateOfGathering" type="text " name="dateOfGathering" maxlength="15"
+							<form:input path="dateOfGathering" type="text " name="dateOfGathering"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -163,7 +163,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="gatheringPlace" class="col-lg-4 labe-right ">Địa điểm tập chung</label>
-							<form:input path="gatheringPlace" type="text " name="gatheringPlace" maxlength="15"
+							<form:input path="gatheringPlace" type="text " name="gatheringPlace" maxlength="255"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -172,7 +172,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="dateTimeGathering" class="col-lg-4 labe-right ">Giờ tập chung</label>
-							<form:input path="dateTimeGathering" type="text " name="dateTimeGathering" maxlength="15"
+							<form:input path="dateTimeGathering" type="text " name="dateTimeGathering"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -261,16 +261,16 @@
 
 	var note = '';
 	$(document).ready(function() {
-		editor = CKEDITOR.replace('note');
+		note = CKEDITOR.replace('note');
 	});
 	var tourProgram = '';
 	$(document).ready(function() {
-		editor = CKEDITOR.replace('tourProgram');
+		tourProgram = CKEDITOR.replace('tourProgram');
 	});
 	/* validate */
 	
 
-	$("#save-user").validate({
+	$("#saveTour").validate({
 		rules : {
 			code : {
 				required : true,
