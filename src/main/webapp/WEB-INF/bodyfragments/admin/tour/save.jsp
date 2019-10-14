@@ -70,8 +70,8 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="startDate" class="col-lg-4 labe-right ">Ngày khởi hành</label>
-							<form:input path="startDate" type="text " name="startDate"
-								class="col-lg-6 form-control"  id="startDate" />
+							<form:input id="dateStart" path="startDate" type="text " name="startDate"
+								class="col-lg-6 form-control"  />
 						</div>
 					</div>
 				</div>
@@ -98,8 +98,8 @@
 				<div class="col-lg-6 input-form">
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
-							<label for="timeOfDepature" class="col-lg-4 labe-right ">Thời gian tập chung</label>
-							<form:input path="timeOfDepature" type="text " name="timeOfDepature"
+							<label id ="timeOfDepature" for="timeOfDepature" class="col-lg-4 labe-right ">Thời gian tập chung</label>
+							<form:input id="timeOfDepatures" path="timeOfDepature" type="text " name="timeOfDepature"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -108,7 +108,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="timeOfEnd" class="col-lg-4 labe-right ">Thời gian kết thúc tour</label>
-							<form:input path="timeOfEnd" type="text " name="timeOfEnd" 
+							<form:input id="timeOfEnd" path="timeOfEnd" type="text " name="timeOfEnd" 
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -153,7 +153,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="dateOfGathering" class="col-lg-4 labe-right ">Ngày tập chung</label>
-							<form:input path="dateOfGathering" type="text " name="dateOfGathering"
+							<form:input id="dateOfGathering" path="dateOfGathering" type="text " name="dateOfGathering"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -171,7 +171,7 @@
 					<div class="container-fluid errorTxt">
 						<div class="row insertError">
 							<label for="dateTimeGathering" class="col-lg-4 labe-right ">Giờ tập chung</label>
-							<form:input path="dateTimeGathering" type="text " name="dateTimeGathering"
+							<form:input id="dateTimeGathering" path="dateTimeGathering" type="text " name="dateTimeGathering"
 								class="col-lg-6 form-control" />
 						</div>
 					</div>
@@ -245,7 +245,15 @@
 	</div>
 </div>
 <script>
-
+	var validateDateBefore= function(idDateBefor, idDateAffter){
+	var dateBefor = new Date( $('#'+idDateBefor).val());
+	var dateAffter = new Date($('#'+idDateAffter).val());
+		if(dateBefor.getTime()>dateAffter.getTime()){
+			alert("ngày bắt đầu phải nhỏ hơn ngày kết thúc");
+			return false;
+		}
+		return true
+	}
 	var note = '';
 	$(document).ready(function() {
 		note = CKEDITOR.replace('note');
@@ -277,7 +285,7 @@
 			},
 			contentImg : {
 				required : true,
-				maxlength : 15
+				maxlength : 255
 			},
 			price : {
 				required : true,
@@ -299,21 +307,46 @@
 			error.insertAfter(element.parents("div.row.insertError"));
 		}
 	});
+	
 	var saveSucces = function(){
 		$('#search').show();
 		$('#save').hide();
-		searchUser();
+		searchTour();
 	}
 	$('#btnTour').click(function(e) {
 		var submit = $("#saveTour").valid();
-		alert("thanh cong")
-		if (submit == true) {
-			var data = converFormToObject('save-user');
-			alert("thanh cong")
-			//updateAjax(data, '${searchUrl}', 'POST',saveSucces);
+		if (submit == true &&validateDateBefore("dateStart","timeOfEnd")) {
+			var data = converFormToObject('saveTour');
+			data["note"] = note.getData();
+			data["tourProgram"] = tourProgram.getData();
+			updateAjax(data, '/admin/v2/tour', 'POST',saveSucces);
 		}
 	});
-	$("#datepicker-5").datepicker({
+	$("#dateStart").datepicker({
 		dateFormat : "mm-dd-yy",
+		 changeMonth: true,
+         changeYear: true
+	});
+	$("#timeOfDepatures").datepicker({
+		dateFormat : "mm-dd-yy",
+		 changeMonth: true,
+         changeYear: true
+	});
+	$("#timeOfEnd").datepicker({
+		dateFormat : "mm-dd-yy",
+		 changeMonth: true,
+         changeYear: true
+	});
+	 $("#dateOfGathering").datepicker({
+		dateFormat : "mm-dd-yy",
+		 changeMonth: true,
+         changeYear: true
+	});
+	$("#dateTimeGathering").datetimepicker({
+		formatTime:'H:i',
+		formatDate:'d.m.Y',
+		defaultDate:'+03.01.1970',
+		defaultTime:'10:00',
+		timepickerScrollbar:false
 	});
 </script>

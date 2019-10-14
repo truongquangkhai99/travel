@@ -7,31 +7,23 @@
 <title><tiles:getAsString name="title" /></title>
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/bootstap/css/bootstrap.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/font-awesome/4.5.0/css/font-awesome.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/css/fonts.googleapis.com.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/css/ace.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/admin/css/ace-skins.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/css/ace-rtl.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/admin/css/main.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/bootstap/css/bootstrap.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/font-awesome/4.5.0/css/font-awesome.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/css/fonts.googleapis.com.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/css/ace.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/admin/css/ace-skins.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/css/ace-rtl.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/admin/css/main.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/datetimepicker-master/jquery.datetimepicker.css"/>'>
 <script src='<c:url value = "/template/web/js/jquery-2.1.4.min.js"/>'></script>
 <script src='<c:url value = "/template/notifycation/toastr.min.js"/>'></script>
 <script src='<c:url value = "/template/admin/js/jquery.validate.min.js"/>'></script>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/notifycation/toastr.min.css"/>'>
-<link rel='stylesheet' type='text/css' media='screen'
-	href='<c:url value = "/template/web/css/ace.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/notifycation/toastr.min.css"/>'>
+<link rel='stylesheet' type='text/css' media='screen' href='<c:url value = "/template/web/css/ace.min.css"/>'>
 <script src='<c:url value = "/template/paging/jquery.twbsPagination.min.js"/>'></script>
-  <script src="<c:url value='/template/ckeditor/ckeditor.js' />"></script>
+<script src="<c:url value='/template/ckeditor/ckeditor.js' />"></script>
+<script src="<c:url value='/template/datetimepicker-master/build/jquery.datetimepicker.full.js' />"></script>
 <body>
 	<div id="notifycation"></div>
 	<tiles:insertAttribute name="header" />

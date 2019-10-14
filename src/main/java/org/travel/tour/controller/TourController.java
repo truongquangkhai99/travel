@@ -43,6 +43,12 @@ public class TourController {
 		model.addAttribute("tours",tours);
 		return "tourPage";
 	}
+	@RequestMapping(value = "/tour", method = RequestMethod.POST)
+	@ResponseBody
+	public Message saveTour(@RequestBody TourForm tourForm, HttpServletRequest req, HttpServletResponse resp) {
+		tourService.saveOrUpdate(tourForm);
+		return Common.createMessage("thêm mới tour thành công", Constant.Message.Success, HttpServletResponse.SC_OK, resp);
+	}
 	@RequestMapping(value = "/tour/list", method = RequestMethod.POST)
 	public String getList(@RequestBody TourForm tourForm, HttpServletRequest req) {
 		List<TourBean> tours = tourService.search(tourForm);
